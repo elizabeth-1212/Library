@@ -2,23 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,700&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
 
-nav{
+nav {
     height: 80px;
     display: flex;
 }
 
-img{
+img {
     width: 100%;
 }
 
-.nav__container{
+.nav__container {
     width: 100%;
     max-width: 1200px;
     padding: 0 24px;
@@ -28,23 +28,23 @@ img{
     margin: 0 auto;
 }
 
-.purple{
+.purple {
      color: #7342d6;
 }
 
-.logo{
+.logo {
     width: 160px;
 }
 
-ul{
+ul {
     display: flex;
 }
 
-li{
+li {
     list-style-type: none;
 }
 
-.nav__link{
+.nav__link {
     margin-left: 16px;
     text-decoration: none;
     font-size: 20px;
@@ -53,30 +53,30 @@ li{
     padding: 8px;
 }
 
-.nav__link:hover{
+.nav__link:hover {
     text-decoration: underline;
 }
 
-.nav__link--primary{
+.nav__link--primary {
     border: 2px solid #7342d6;
     border-radius: 4px;
 }
 
-.nav__link--primary:hover{
+.nav__link--primary:hover {
     text-decoration: none;
 }
 
-#landing{
+#landing {
     background-color: rgba(115, 66, 214, 0.1)
 }
 
-header{
+header {
     height: calc(100vh - 80px);
 }
 
 /*HEADER*/
 
-.header__container{
+.header__container {
     width: 100%;
     max-width: 720px;
     margin: 0 auto;
@@ -86,17 +86,21 @@ header{
     justify-content: space-around;
 }
 
-h1{
+h1 {
     font-size: 56px;
     color: #7342d6;
     margin-bottom: 24px;
     text-align: center;
 }
 
-h2{
+h2 {
     font-size: 32px;
     margin-bottom: 32px;
     text-align: center;
+}
+
+button {
+    cursor: pointer;
 }
 
 .btn {
