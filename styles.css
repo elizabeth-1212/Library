@@ -151,6 +151,12 @@ button:active{
     /*margin: 0 auto;*/
 }
 
+.row__column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*HIGHLIGHTS*/
 
 #highlights {
@@ -275,4 +281,35 @@ button:active{
     margin: 0 0 8px 16px;
     padding-right: 6px;
     color: #bfbfbf;
+}
+
+
+/*EXPLORE*/
+
+
+#explore {
+    background-color: rgba(115, 66, 214, 0.1);
+    }
+
+
+
+
+/*FOOTER*/
+
+
+.footer__row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8% 0;
+}
+
+.footer__link--list{
+    margin-left: 38px;
+    margin-right: 38px;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
 }
