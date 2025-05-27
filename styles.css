@@ -228,6 +228,7 @@ button:active{
 
 .books {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .book {
@@ -254,7 +255,8 @@ button:active{
 }
 .book__title {
     font-size: 20px;
-    margin-bottom: 8px;
+    /*margin-bottom: 8px;*/
+    margin: 0 0 8px 16px;
 }
 
 .book__title:hover {
@@ -263,12 +265,14 @@ button:active{
 }
 
 .book__ratings {
-    margin-bottom: 8px;
+    /*margin-bottom: 8px;*/
+    margin: 0 0 8px 16px;
     color: #fabf2a;
 }
 
 .book__price--normal {
     text-decoration: line-through;
+    margin: 0 0 8px 16px;
     padding-right: 6px;
     color: #bfbfbf;
 }
