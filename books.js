@@ -5,8 +5,32 @@ function renderBooks(filter) {
 
   
   if (filter === 'LOW_TO_HIGH') {
-    console.log(filter);
+    books.sort((a, b) => a.originalPrice - b.originalPrice);
   }
+
+  else if (filter === 'HIGH_TO_LOW') {
+    books.sort((a, b) => b.originalPrice - a.originalPrice);
+  }
+
+  else if (filter === 'RATING') {
+    books.sort((a, b) => b.rating - a.rating);
+  }
+
+  let ratingHTML = '';
+  let rating = 4.5;
+
+  for (let i = 0; i < Math.floor(rating); ++i) {
+    ratingHTML += '<i class="fas fa-star"></i>\n'
+  }
+
+  if (!Number.isInteger(rating)) {
+    ratingHTML += '<i class="fas fa-star-half-alt"></i>\n'
+
+  }
+
+  console.log(ratingHTML);
+
+
 
   const booksHtml = books.map((book) => {
     return `<div class="book">
@@ -30,8 +54,7 @@ function renderBooks(filter) {
   })
   .join("");
 
-  booksWrapper.innerHTML = booksHtml;
-  //booksWrapper.innerHTML =           
+  booksWrapper.innerHTML = booksHtml;           
 }
 
 
