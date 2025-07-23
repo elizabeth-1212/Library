@@ -32,6 +32,8 @@ function renderBooks(filter) {
   booksWrapper.innerHTML = booksHtml;
 }
 
+//<span>$${book.originalPrice.toFixed(2)}</span>
+//${priceHTML(book.originalPrice, book.salePrice)}
 
 
 //function priceHTML(originalPrice, salePrice) {
@@ -39,7 +41,7 @@ function renderBooks(filter) {
 //    return `${originalPrice}`
 //  }
 //}
-  //console.log(originalPrice, salePrice);
+//  console.log(originalPrice, salePrice)
   //<span class="book__price--normal">$59.95</span>$14.95
 
 
