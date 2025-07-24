@@ -24,7 +24,7 @@ function renderBooks(filter) {
               ${ratingsHTML(book.rating)}
             </div>
             <div class="book__price">
-              <span>$${book.originalPrice.toFixed(2)}</span>
+              <span class="book__price--normal">$59.95</span> $14.95
             </div>
           </div>`;
     })
@@ -49,10 +49,10 @@ function renderBooks(filter) {
 function ratingsHTML(rating) {
   let ratingHTML = "";
   for (let i = 0; i < Math.floor(rating); ++i) {
-    ratingHTML += '<i class="fas fa-star"></i>\n';
+    ratingHTML += '<i class="fas fa-star"></i>';
   }
   if (!Number.isInteger(rating)) {
-    ratingHTML += '<i class="fas fa-star-half-alt"></i>\n';
+    ratingHTML += '<i class="fas fa-star-half-alt"></i>';
   }
   return ratingHTML;
 }
