@@ -8,8 +8,8 @@ async function renderBooks(filter) {
   if (!books) {
     books = await getBooks();
   }
-  
-  booksWrapper.classList.remove(' books__loading')
+
+  booksWrapper.classList.remove('books__loading')
 
 
   if (filter === "LOW_TO_HIGH") {
